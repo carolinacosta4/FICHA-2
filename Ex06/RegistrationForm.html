@@ -6,23 +6,28 @@
     <body>
         <h1>Registration Form</h1>
         <form method="post" action="https://www.webucator.com/materials/htm101/">
+        <input type="hidden" name="emailMe" id="emailMe" value="you@you.com">
         <div>
         User name:<input type="text" name="username">
         <div>
         Password:<input type="password" name="password">
         <div></div>
-        Gender: <input type="radio" name="gender" value="male" checked> Male 
-        <input type="radio" name="gender" value="female"> Female 
-        <input type="radio" name="gender" value="other"> Other <br>
-        Click to accept our terms: <input type="checkbox" name="terms"><br>
+        Gender: <input type="radio" name="gender" value="genderm" checked> Male 
+        <input type="radio" name="gender" value="genderf"> Female <br>
+        Click to accept our terms: <input type="checkbox" name="terms" id="terms"><br>
         <form action="action_page.html">
-            <label for="hear about us">Where did you hear about us?</label>
-            <select name="hear about us" id="hear about us">
-            <option value="Friends">Friends</option>
-            <option value="online">Online</option>
+            <label for="referral">Where did you hear about us?</label>
+            <select name="referral" id="referral">
+            <option value=0>–Please choose–</option>
+            <option value="wom">Word of Mouth</option>
+            <optgroup label="Search Engine">
+            <option value="Google">Google</option>
+            <option value="Yahoo!">Yahoo!</option>
+            <option value="MSN">MSN</option>
+            </optgroup>
             </select>
             </form><br>
-        Comments:<br><textarea name="message" rows="5" cols="30"></textarea>
+        Comments:<br><textarea name="comments" id="comments" rows="5" cols="30"></textarea>
         <div></div>
         <input type="submit" value="Submit">
         <input type="Reset" value="Reset">
