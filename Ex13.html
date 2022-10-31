@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+    <form method="post" action = "Ex13.html"></form>
+    Name: <input type="text" name="name"><br>
+    <fieldset>
+        <legend>Age</legend>
+        <input type = radio name="age" value="lessthan18" checked><label><18</label>
+        <input type ="radio" name ="age" value="between19and35" checked> 19-35
+        <input type ="radio" name ="age" value="between36and48" checked> 36-48
+        <input type ="radio" name ="age" value="olderthan49" checked><label>>49</label>
+    </fieldset>
+    Profession: <input type="text" name="profession">
+    <label for="country">Country</label>
+    <select name="country" id="country">
+    <option value="Portugal">Portugal</option>
+    <option value="England">England</option>
+    <option value="Dubai">Dubai</option>
+    </select>
+    <fieldset>
+        <legend>Interests</legend>
+        <input type="checkbox" name="Photography" id="Photography">Photography
+        <input type="checkbox" name="Music" id="Music">Music
+        <input type="checkbox" name="Cinema" id="Cinema">Cinema
+        <input type="checkbox" name="Computers" id="Computers">Computers
+    </fieldset>
+    How did you find us:<br><textarea name="txt" id="txt" rows="5" cols="30"></textarea><br>
+    <input type="submit" value="Submit">
+</body>
